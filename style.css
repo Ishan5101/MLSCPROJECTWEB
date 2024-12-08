@@ -1,0 +1,138 @@
+/* Body styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  /* Container styling */
+  .quiz-container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    animation: slide-in 1s ease-out;
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-size: 2rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+  }
+  
+  /* Question container */
+  .question {
+    text-align: left;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #6e8efb;
+  }
+  
+  /* Buttons */
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  /* Submit button */
+  button[type="button"] {
+    background: #6e8efb;
+    color: white;
+  }
+  
+  button[type="button"]:hover {
+    background: #5a78d4;
+    transform: scale(1.05);
+  }
+  
+  /* Reset button */
+  button[type="reset"] {
+    background: #f44336;
+    color: white;
+  }
+  
+  button[type="reset"]:hover {
+    background: #d7342a;
+    transform: scale(1.05);
+  }
+  
+  /* Result message */
+  #result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4caf50;
+    margin-top: 15px;
+    animation: fade-in 1s ease-in;
+  }
+  
+  /* Animations */
+  @keyframes slide-in {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .quiz-container {
+      padding: 20px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }
+  
